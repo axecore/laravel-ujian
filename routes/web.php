@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register.form');
 
 // Route::group(['middleware' => 'guest'], function () {
 //     Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
